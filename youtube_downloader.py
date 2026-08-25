@@ -53,5 +53,5 @@ def download_audio_from_search(query, output_folder="MusicDownloads"):
             print(f"[-] Error downloading audio: {e}")
 
 if __name__ == "__main__":
-    search_query = "Kendrick Lamar - m.a.a.d city"
+    search_query = "above the sleeping world - going dark"
     download_audio_from_search(search_query)

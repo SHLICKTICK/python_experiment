@@ -16,7 +16,8 @@ def download_video_from_search(query, output_folder="VideoDownloads"):
         
         # 1. Tries best single pre-merged stream (video+audio together)
         # 2. Falls back to any format that doesn't strictly require merging
-        'format': 'best[ext=mp4]/best',
+        #'format': 'best[ext=mp4]/best',
+        'format': 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best',
         
         # Output template: saves file as "Video Title.mp4"
         'outtmpl': str(download_path / '%(title)s.%(ext)s'),
